@@ -1,6 +1,6 @@
 // Simulador de un comercio
 alert("Ingrese la opcion del producto que desea llevar, para salir ingrese 0");
-let seleccionarProductos = prompt( "1-buzo $3000 \n 2-remera $1500 \n 3-jean $5000 \n 4-Zapatillas $6000 ");
+let seleccionarProductos = parseInt(prompt( "1-buzo $3000 \n 2-remera $1500 \n 3-jean $5000 \n 4-Zapatillas $6000 "));
 let seleccionarCantidad;
 let total = 0;
 
@@ -42,10 +42,12 @@ const metodoDePago = () => {
   let metodo = prompt("ingrese el metodo de pago, tarjeta o efectivo" )
   if (metodo == "tarjeta") {
     total *= 1.2
-    console.log(total);
+    alert("El total a abonar con tarjeta es" + " " + total);
   }else if ( metodo == "efectivo") {
     total -= 1000
-    alert("tenes un descuento de 1000, el total es:" + total)
+    alert("tenes un descuento de 1000, el total es:" + " " + total);
+  } else {
+    alert("Opcion Invalida");
   }
 }
 
