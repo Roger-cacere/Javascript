@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="main2.css">
+    <!-- CSS de BS --> 
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous"/> 
+    <title> Double Sport </title>
+</head>
+
+<body>
+    <!-- HEADER - INICIO -->
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light barra">
+        <img src="./img/png-transparent-sport-logo-football-player-cleveland-cavaliers-new-york-icons-thumbnail.png" alt="Logo de Double Sports">
+        <a class="navbar-brand" href="index.html">Double Sports</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html"> INICIO <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        SECCIONES
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#ligas"> LIGAS </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#nosotros"> NOSOTROS </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#trabaja"> TRABAJA CON NOSOTROS </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#mercado"> MERCADO </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#contactanos"> CONTÁCTANOS </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#ingresar"> INGRESAR </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="hero padding--margin">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/camisetas-brasileirao-2019-h.jpg" class="d-block w-100"
+                        alt="Equipos de Brasileirao">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camisetas-de-la-bundesliga-2021-22-h.jpg" class="d-block w-100"
+                        alt="Equipos de la Bundesliga">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camisetas-la-liga-2020-21.jpg" class="d-block w-100"
+                        alt="Equipos de La Liga">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camisetas-premier-league-2021-22-h.jpg" class="d-block w-100"
+                        alt="Equipos de la Premier League">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/camisetas-superliga-2019-20-h1-1021x550.jpg" class="d-block w-100"
+                        alt="Equipos de la Liga Profesional de Futbol">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/14769530677796.jpg" class="d-block w-100"
+                        alt="Equipos de la Ligue 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/serie-a-2020-21-kits-h.jpg" class="d-block w-100"
+                        alt="Equipos de la Serie A">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+    <!-- HEADER - FIN -->
+  
+    <!-- LIGAS - INICIO -->
+
+    <section class="text-bg-secondary p-3">
+
+    <div class="title espacio">
+        <h1 id="ligas" class="text-center"> Ligas </h1>
+    </div>
+    <p class="lead text-center">Esta tabla representa los equipos que estan punteros en su liga</p>
+
+    <section class="padding--margin">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Liga</th>
+                    <th scope="col">Escudo</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Puntos</th>
+                    <th scope="col">Goleador del equipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td class="primerDivisa"></td>
+                    <td class="primerDivisa"></td>
+                    <td class="primerDivisa"></td>
+                    <td class="primerDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td class="segundaDivisa"></td>
+                    <td class="segundaDivisa"></td>
+                    <td class="segundaDivisa"></td>
+                    <td class="segundaDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td class="tercerDivisa"></td>
+                    <td class="tercerDivisa"></td>
+                    <td class="tercerDivisa"></td>
+                    <td class="tercerDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td class="cuartaDivisa"></td>
+                    <td class="cuartaDivisa"></td>
+                    <td class="cuartaDivisa"></td>
+                    <td class="cuartaDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td class="quintaDivisa"></td>
+                    <td class="quintaDivisa"></td>
+                    <td class="quintaDivisa"></td>
+                    <td class="quintaDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td class="sextaDivisa"></td>
+                    <td class="sextaDivisa"></td>
+                    <td class="sextaDivisa"></td>
+                    <td class="sextaDivisa"></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td class="septimaDivisa"></td>
+                    <td class="septimaDivisa"></td>
+                    <td class="septimaDivisa"></td>
+                    <td class="septimaDivisa"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- LIGAS - FIN -->
+
+    <!-- CALCULADORA - INICIO -->
+
+    <div class="title">
+
+        <h2 id="mercado"> MERCADO </h2>
+
+    </div>
+
+     <section class="padding--margin">
+        <form id="formCalculadora">
+            <div class="input-group mb-3">
+
+                <select class="custom-select" id="inputGroupSelect03">
+                    <option selected disabled>Elige el tipo de operación que deseas realizar...</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">De: </label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                    <option selected disabled>Elige el Producto</option>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"></span>
+                </div>
+                <input id="cantidadDivisaCalcular" type="text" class="form-control"
+                    aria-label="Amount (to the nearest dollar)" placeholder="Ingrese la cantidad a consultar...">
+                <div class="input-group-append">
+                    <span class="input-group-text"></span>
+                </div>
+            </div>
+
+            <button id="botonCalcular" class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+        <p id="resumenCalculadora"></p>
+    </section>
+
+    <!-- CALCULADORA - FIN -->
+    
+    <!-- NOSOTROS - INICIO -->
+    
+
+    <div class="title">
+
+        <h2 id="nosotros"> NOSOTROS </h2>
+
+    </div>
+
+    <section class="padding--margin">
+
+        <div class="card">
+            <div class="card-body">
+                ¡Bienvenido a Double Sports! Somos un equipo de periodismo deportivo, que estamos al tanto de las mejores ligas del mundo, no solo nos interesamos por saber quien es el mejor equipo,
+                Sino que tambien nos centramos en ver jovenes promesas que pueden sorprender al mundo desde el lado futbolistico. No solo buscamos la mejor informacion del futbol, sino que tambien 
+                trabajamos con indumentarias de camisetas de futbol. Buscamos crecer como grupo y tener mayor influencia en las redes.
+            </div>
+        </div>
+
+    </section>
+
+    <!-- NOSOTROS - FIN -->
+
+    <!-- TRABAJO - INICIO -->
+
+
+    <div class="title">
+
+        <h2 id="trabaja"> TRABAJA CON NOSOTROS </h2>
+
+    </div>
+
+    <section class="padding--margin">
+        <div class="card">
+            <div class="card-body">
+
+                En Double Sport, estamos buscando nuevos miembros para unirse a nuestro equipo de trabajo futbolero.
+                Actualemente estamos buscando personas motivadas y apasionadas que esten dispuestas a trabajar en un ambiente dinámico y desafiante.
+                Las posiciones que estamos buscando actualmente son:
+
+                Periodistas que se encargue de viajar a buscar informacion cuando lo ordene la empresa. Por lo general nso gustaria que tenga experiencia,
+                pero de lo contrario novamos a dar la espalda a principiantes que esten dando sus primeros pasos en este rubro.
+                Tambien buscamos camarografos, para el equipo de produccion. Y por ultimo estamos dispuestos a trabajar con indumentarias pequeñas para que juntos podamos
+                crecer.
+                Si eres una persona entusiasta, enérgica y con ganas de progresar en este mundo, te invitamos a que seas parte de nosotros.
+                Enviuanos tu curriculum vitae y carta de presentacion para que podamos conversar sobre tu puesto de trabajo ¡Esperamos recibir tu solicitud!
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="padding--margin">
+
+        <form id="formDatos">
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault01">Nombre</label>
+                    <input id="nombreDatos" type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                    <label for="validationDefault02">Apellido</label>
+                    <input id="apellidoDatos" type="text" class="form-control" placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault01" class="espacio">Correo Electrónico</label>
+                    <input id="correoDatos" type="email" class="form-control" placeholder="Correo Electrónico">
+                </div>
+                <div class="col">
+                    <label for="validationDefault02" class="espacio">Teléfono</label>
+                    <input id="telefonoDatos" type="number" class="form-control" placeholder="Teléfono" min="0">
+                </div>
+            </div>
+            <button id="botonDatosCareers" class="btn btn-primary" type="submit">Enviar Información</button>
+        </form>
+        <p id="resumenDatos"></p>
+
+    </section>
+
+    <!-- TRABAJO - FIN -->
+    
+    <!-- CONTACTO DE ENPRENDIMIENTOS - INICIO -->
+
+    <div class="title">
+
+        <h2 id="contactanos"> EMPRENDIMIENTOS </h2>
+
+    </div>
+    <p class="lead text-center">Escribenos sobre tu emprendimiento, como dijimos anteriormente, trabajamos con emprendimientos externos 
+        entonces necesitamos que en un mensaje, nos describas sobre tu emprendimiento, la localizacion, tus productos, etc. </p>
+
+    <section class="padding--margin">
+
+        <form id="formContacto">
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault01">Nombre</label>
+                    <input type="text" class="form-control" placeholder="First name" id="nombreContacto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault02" class="espacio">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Last name" id="apellidoContacto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="validationDefault01" class="espacio">Correo</label>
+                    <input type="email" class="form-control" placeholder="Email address" id="correoContacto">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1" class="espacio">Mensaje: </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar Datos</button>
+        </form>
+
+        <p id="resumenContacto"></p>
+    </section>
+
+    <!-- CONTACTO DE EMPRENDIMIENTOS - FIN -->
+  
+    <!-- PACKS - INICIO -->
+    
+    <div class="title">
+
+        <h2 id="sugerencias text-center">PACKS</h2>
+
+    </div>
+
+    <section class="padding--margin">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse"
+                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Pack Futbol Argentino
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Pack Fútbol Argentino. Clickea sobre tu Cable Operador y comenzá a disfrutar. ¡Suscribite Ahora! <!-- Debo agregar un link para que activen el pack (pendiente) --> 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Star +
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        En Star+, puedes encontrar series, películas, deportes en vivo y más de lo que te gusta. Queremos que encuentres estrenos de series y películas, y los deportes en vivo de ESPN.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                           Paramount +
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Miles de Horas de Las Historias Más Grandiosas. Un Precio Increíble y Sin Comerciales. Disfrutá en Tablet, Computadora o Dispositivo de Streaming. ¡Experimente ya! Shows Exclusivos. Estrellas Icónicas. En Casa. Historias Únicas. A Cualquier Hora.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-center collapsed" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            Flow Flex
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Si tenés Personal en tu casa y/ o en tu celu contratá Flow Flex por la cantidad de días que quieras. Elegí packs por días o la suscripción mensual a Flow Flex Abono. Mirá TV en vivo, pelis, series, radio y música, 100% digital, sin instalación ni deco. Pagá por los días que usas y disfrutalo el tiempo que quieras.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKS - FIN -->
+
+    <!-- INGRESO - INICIO -->
+    
+    <div class="title">
+
+        <h2 id="ingresar"> INGRESAR </h2>
+
+    </div>
+
+    <section class="padding--margin" id="lista-usuarios">
+
+        <form id="formLogIn">
+            <div class="form-group">
+                <label for="inputAddress">Nombre de Usuario: </label>
+                <input type="text" class="form-control" id="nombreLogIn" placeholder="Introduzca el nombre de usuario">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email: </label>
+                    <input type="email" class="form-control" id="correoLogIn"
+                        placeholder="Introduzca su correo electrónico">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password: </label>
+                    <input type="password" class="form-control" id="contraseniaLogIn"
+                        placeholder="Introduzca la contraseña">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+
+        <p id="resumenLogIn"></p>
+
+    </section>
+
+    </section>
+    <!-- INGRESO - FIN -->
+
+    <!-- FOOTER - INICIO -->
+
+        <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <ul class="d-flex list-unstyled ul__redes justify-content-center">
+                    <li class="redes-sociales">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook logo-social" viewBox="0 0 16 16">
+                          <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/> 
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="redes-sociales">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter logo-social" viewBox="0 0 16 16">
+                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="redes-sociales">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram logo-social" viewBox="0 0 16 16">
+                          <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="redes-sociales">
+                      <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube logo-social" viewBox="0 0 16 16">
+                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr class="text-light" />
+              <div class="row">
+                <p class="text-center text-light fs-5">
+                  © 2023  Double Sports | Powered by Roger Caceres
+                </p>
+              </div>
+        </footer>
+
+    <!-- ENLACES DE BOOTSTRAP - INICIO -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!--ENLACE SWEET ALERT - INICIO -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--ENLACE LUXON - INICIO -->
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+
+    <!-- ENLACE SCRIPT.JS PROPIO - INICIO -->
+
+    <script src="data.js" type="module"></script>
+    <script src="main2.js"></script>
+
+
+</body>
+
+</html>
