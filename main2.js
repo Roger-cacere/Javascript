@@ -7,7 +7,6 @@ const now = DateTime.now();
 // Creación del Constructor del Objeto DIVISA
 
 class Equipos {
-
     constructor(escudo, nombre, puntos, goleador) {
         this.escudo = escudo;
         this.nombre = nombre;
@@ -19,7 +18,6 @@ class Equipos {
         return this.nombre;
 
     }
-
 }
 
 // Declaración del Vector de las diferentes Divisas
@@ -28,13 +26,13 @@ let listaEquipos = [];
 
 // Creación de Objetos con el Constructor DIVISA dentro del Vector listaEquipos []
 
-listaEquipos.push(new Equipos("Barcelona.png", "Barcelona", 77, "Robert Lewandowski"));
-listaEquipos.push(new Equipos("Arsenal.png", "Arsenal", 75, "Gabriel Martinelli"));
-listaEquipos.push(new Equipos("PSG.png", "PSG", 75, "Kylian Mbappé"));
-listaEquipos.push(new Equipos("River.png", "River", 33, "Beltrán"));
-listaEquipos.push(new Equipos("Fluminense.png", "Fluminense", 6, "German Cano"));
-listaEquipos.push(new Equipos("Napoli.png", "Napoli", 78, "Victor Osimhen"));
-listaEquipos.push(new Equipos("Dortmund.jpg", "Borussia Dortmund", 60, "Jude Bellingham"));
+listaEquipos.push(new Equipos("./img/escudo-barcelona.jpg","Barcelona", 77, "Robert Lewandowski"));
+listaEquipos.push(new Equipos("./img/escudo-arsenal.jpg","Arsenal", 75, "Gabriel Martinelli"));
+listaEquipos.push(new Equipos("./img/escudo-psg.png","PSG", 75, "Kylian Mbappé"));
+listaEquipos.push(new Equipos("./img/escudo-river.png","River", 33, "Beltrán"));
+listaEquipos.push(new Equipos("./img/escudo-flumienense.png","Fluminense", 6, "German Cano"));
+listaEquipos.push(new Equipos("./img/escudo-napoli.png","Napoli", 78, "Victor Osimhen"));
+listaEquipos.push(new Equipos("./img/escudo-borussia.png","Borussia Dortmund", 60, "Jude Bellingham"));
 
 //Creación de variables para los nodos del DOM
 
@@ -82,6 +80,110 @@ septimaDivisa[0].innerText = listaEquipos[6].escudo;
 septimaDivisa[1].innerText = listaEquipos[6].nombre;
 septimaDivisa[2].innerText = listaEquipos[6].puntos;
 septimaDivisa[3].innerText = listaEquipos[6].goleador;
+
+// MERCADO 
+
+class producto {
+    constructor(id, titulo, imagen, precio) {
+      this.id = id;
+      this.titulo = titulo;
+      this.imagen = imagen;
+      this.precio = precio;
+      this.cantidad = 1;
+    }
+  }
+
+const productosMercado = [];
+
+productosMercado.push(new producto("g1","Red Milan","./img/ac-milan.jpg",10000));
+productosMercado.push(new producto("g2","Arsenal","./img/arsenal.jpg",11500));
+productosMercado.push(new producto("g3","Atletico Madrid","./img/atletico-madrid.jpg",11250));
+productosMercado.push(new producto("g4","Barcelona","./img/barcelona.webp",10500));
+productosMercado.push(new producto("g5","Bayern Leverkusen","./img/bayern-leverkusen.jpg",9200));
+productosMercado.push(new producto("g6","Bayern Munich","./img/bayern-munich.avif",12000));
+productosMercado.push(new producto("g7","Boca","./img/boca.webp",12400));
+productosMercado.push(new producto("g8","Borussia Dortmund","./img/borussia-dortmund.jpg",9700));
+productosMercado.push(new producto("g9","Huracan","./img/huracan.jpg",8800));
+productosMercado.push(new producto("g10","Independiente","./img/independiente.jpg",9400));
+productosMercado.push(new producto("g11","Inter","./img/inter.jpg",13000));
+productosMercado.push(new producto("g12","Lanus","./img/lanus.png",7000));
+productosMercado.push(new producto("g13","Lille","./img/lille.webp",7600));
+productosMercado.push(new producto("g14","Liverpool","./img/liverpool.jpg",13300));
+productosMercado.push(new producto("g15","Lyon","./img/lyon.jpg",9500));
+productosMercado.push(new producto("g16","Manchester City","./img/man-city.webp",15000));
+productosMercado.push(new producto("g17","Manchester United","./img/manunited.jpg",13700));
+productosMercado.push(new producto("g18","Monaco","./img/monaco.jpg",8400));
+productosMercado.push(new producto("g19","Paris Saint-Germain","./img/psg.jpg",11000));
+productosMercado.push(new producto("g20","Racing","./img/racing.jpg",8900));
+productosMercado.push(new producto("g21","Real Madrid","./img/realmadrid.jpg",14800));
+productosMercado.push(new producto("g22","River","./img/river.webp",13000));
+productosMercado.push(new producto("g23","San Lorenzo","./img/san-lorenzo.jpg",8800));
+productosMercado.push(new producto("g24","Shalcke","./img/shalcke.webp",9900));
+productosMercado.push(new producto("g25","Tottenham","./img/tottenham.jpg",12900));
+
+let carrito = [];
+
+const contenedorProductos = document.querySelector("#contenedor-productos");
+
+function cargarProductos() {
+    productosMercado.forEach((producto) => {
+      const div = document.createElement("div");
+      div.classList.add(
+        "producto",
+        "col-xl-4",
+        "col-md-6",
+        "col-sm-12",
+        "p-2",
+        "pb-1",
+        "text-center"
+      );
+      div.innerHTML = `<img class="card-img-top img-fluid" src="${producto.imagen}" alt="${producto.titulo}">
+                          <div class="card-body">
+                              <h4 class="card-title">${producto.titulo}</h3>
+                              <p class="card-text py-1">$${producto.precio}</p>
+                              <button class="btn btn-info" id="boton${producto.id}">Agregar</button>
+                          </div>`;
+  
+      contenedorProductos.appendChild(div);
+  
+      // agregar productos al Carrito
+  
+      const boton = document.getElementById(`boton${producto.id}`);
+      boton.addEventListener("click", () => {
+        agregarAlCarrito(producto.id);
+        Swal.fire({
+          position: 'bottom-start',
+          icon: 'success',
+          text: `"${producto.titulo}" se agregó al carrito`,
+          showConfirmButton: false,
+          timer: 1500,
+          width: `25%`,
+          padding: `1rem`,
+        })
+      });
+    });
+  }
+
+  /* const carritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));
+  if (carritoLS) {
+    carrito = carritoLS;
+  } else {
+    carrito = [];
+  }; */
+  
+  cargarProductos();
+  
+  const agregarAlCarrito = (id) => {
+    const productoEnCarrito = carrito.find((producto) => producto.id === id);
+    if (productoEnCarrito) {
+      productoEnCarrito.cantidad++;
+    } else {
+      const producto = producto.find((producto) => producto.id === id);
+      carrito.push(producto);
+    }
+  
+    localStorage.setItem("productos-en-carrito", JSON.stringify(carrito));
+  };
 
 // TRABAJO - INICIO
 
@@ -366,4 +468,4 @@ formLogIn.addEventListener("submit", (event) => {
         formLogIn.reset();
     }
 
-})
+}) 

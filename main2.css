@@ -35,6 +35,18 @@ li {
 html {
   scroll-behavior: smooth; }
 
+/* Carrito de compras */
+.carrito.producto .calculadora {
+  border-top-left-radius: 1rem;
+}
+.disabled {
+  display: none;
+}
+.carrito-producto {
+background: linear-gradient(white, white, white, rgb(231, 231, 231)) ;
+
+}
+
 /* Desactivamos estilos por defecto de las principales etiquetas (texto) */
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
   font-size: 1em;
@@ -165,3 +177,62 @@ footer .ul__redes .redes-sociales a:hover {
 footer .ul__redes .redes-sociales a:hover .logo-social {
     color: #f3ef06;
   }
+
+/* Botones de carrito */
+.boton-menu {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  padding: 1rem;
+  font-size: 0.85rem;
+  width: 100%;
+}
+
+.boton-menu.active {
+  background-color: white;
+  color: var(--clr-main);
+  position: relative;
+  border-top-right-radius: 4px;
+}
+
+.boton-menu.active::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  bottom: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
+.boton-menu.active::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 2rem;
+  top: 100%;
+  right: 0;
+  background-color: transparent;
+}
+
+/* css opcional */
+.calculadora {
+  background: linear-gradient(var(--clr-white), white);
+}
+
+aside {
+  background: linear-gradient(rgb(181, 181, 181), rgb(206, 206, 206), white);
+  position: sticky;
+  top: 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-right-radius: 1rem;
+  margin-bottom: 2rem;
+}
