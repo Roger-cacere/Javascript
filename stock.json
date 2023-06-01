@@ -40,7 +40,7 @@
         "nombre": "Bayern Leverkusen",
         "liga": "Bundesliga",
         "desc": "Camiseta del Bayern Leverkusen, un equipo que intenta luchar el campeonato cad año",
-        "img": "./img/bayern-leverkusen.jpg",
+        "img": "./img/bayern-leverkusen.avif",
         "precio": 8700,
         "cantidad": 1
     },
@@ -108,7 +108,7 @@
         "nombre": "Lanus",
         "liga": "Liga Profesional de Futbol",
         "desc": "La camiseta del granate, compite en la liga con su maximo esfuerzo",
-        "img": "./img/lanus.jpg",
+        "img": "./img/lanus.png",
         "precio": 10000,
         "cantidad": 1
     }
