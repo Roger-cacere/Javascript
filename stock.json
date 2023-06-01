@@ -108,7 +108,7 @@
         "nombre": "Lanus",
         "liga": "Liga Profesional de Futbol",
         "desc": "La camiseta del granate, compite en la liga con su maximo esfuerzo",
-        "img": "./img/lanus.png",
+        "img": "./img/lanus.jpg",
         "precio": 10000,
         "cantidad": 1
     }
