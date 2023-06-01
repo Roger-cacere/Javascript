@@ -1,0 +1,235 @@
+[
+    {
+        "id": 1,
+        "nombre": "AC Milan",
+        "liga": "Serie A",
+        "desc": "Camiseta del AC Milan, no te pierdas una de las mejores camisetas de la liga italiana",
+        "img": "./img/ac-milan.jpg",
+        "precio": 11000,
+        "cantidad": 1
+    },
+    {
+        "id": 2,
+        "nombre": "Arsenal",
+        "liga": "Premier League",
+        "desc": "Llevate la camiseta del Arsenal uno de los clubes que demostro de lo que es capaz en esta temporada",
+        "img": "./img/arsenal.jpg",
+        "precio": 14000,
+        "cantidad": 1
+    },
+    {
+        "id": 3,
+        "nombre": "Atletico Madrid",
+        "liga": "La Liga",
+        "desc": "Camiseta exclusiva del atletico madrid que siempre pelea la liga en España",
+        "img": "./img/atletico-madrid.jpg",
+        "precio": 9000,
+        "cantidad": 1
+    },
+    {
+        "id": 4,
+        "nombre": "Barcelona",
+        "liga": "La Liga",
+        "desc": "La camiseta del Barcelona, el equipo campeón del torneo local",
+        "img": "./img/barcelona.webp",
+        "precio": 13000,
+        "cantidad": 1
+    },
+    {
+        "id": 5,
+        "nombre": "Bayern Leverkusen",
+        "liga": "Bundesliga",
+        "desc": "Camiseta del Bayern Leverkusen, un equipo que intenta luchar el campeonato cad año",
+        "img": "./img/bayern-leverkusen.jpg",
+        "precio": 8700,
+        "cantidad": 1
+    },
+    {
+        "id": 6,
+        "nombre": "Bayern Munich",
+        "liga": "Bundesliga",
+        "desc": "La maravillosa camiseta del Bayern Munich, equipo que siempre compite en la champions",
+        "img": "./img/bayern-munich.jpg",
+        "precio": 10800,
+        "cantidad": 1
+    },
+    {
+        "id": 7,
+        "nombre": "Boca",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta de Boca, un club con una gran historia futbolera",
+        "img": "./img/boca.webp",
+        "precio": 11800,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 8,
+        "nombre": "Borussia Dortmund",
+        "liga": "Bundesliga",
+        "desc": "La camiseta del Borussia, siempre con garra luchando por ser campeon de la bundesliga",
+        "img": "./img/borussia-dortmund.jpg",
+        "precio": 9900,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 9,
+        "nombre": "Huracan",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "Llevate la camiseta del globo, que siempre compite contra su clasico rival",
+        "img": "./img/huracan.jpg",
+        "precio": 8900,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 10,
+        "nombre": "Independiente",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta del rojo, el rey de copas que nadie supera",
+        "img": "./img/independiente.jpg",
+        "precio": 11200,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 11,
+        "nombre": "Inter",
+        "liga": "Serie A",
+        "desc": "La camiseta del Inter, el actual campeon de la Serie A con su delantero estrella",
+        "img": "./img/inter.jpg",
+        "precio": 12700,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 12,
+        "nombre": "Lanus",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta del granate, compite en la liga con su maximo esfuerzo",
+        "img": "./img/lanus.jpg",
+        "precio": 10000,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 13,
+        "nombre": "Liverpool",
+        "liga": "Premier League",
+        "desc": "La camiseta del liverpool, un gran equipo que pelea por levantar la champions",
+        "img": "./img/liverpool.jpg",
+        "precio": 13000,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 14,
+        "nombre": "Lyon",
+        "liga": "Ligue 1",
+        "desc": "La camiseta del Lyon, un equipo que lucha por arrebartarle el titulo al PSG",
+        "img": "./img/lyon.jpg",
+        "precio": 10000,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 15,
+        "nombre": "Manchester City",
+        "liga": "Premier League",
+        "desc": "La camiseta de uno de los mejores clubes de europa con una gran competitividad en la premier y campeon de esta misma",
+        "img": "./img/man-city.webp",
+        "precio": 15000,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 16,
+        "nombre": "Manchester United",
+        "liga": "Premier League",
+        "desc": "La camiseta de los diablos rojos, que se esta reforzando con nuevos jugadores para ganar el titulo",
+        "img": "./img/manunited.jpg",
+        "precio": 13400,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 17,
+        "nombre": "Monaco",
+        "liga": "Ligue 1",
+        "desc": "La camiseta del Monaco, equipo en el que crecio Mbappé",
+        "img": "./img/monaco.jpg",
+        "precio": 8600,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 18,
+        "nombre": "PSG",
+        "liga": "Ligue 1",
+        "desc": "Camiseta del PSG, actual equipo de Messi y último campeon de la ligue 1",
+        "img": "./img/psg.jpg",
+        "precio": 14600,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 19,
+        "nombre": "Racing",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta de Racing que esta compitiendo por levantar la copa libertadores",
+        "img": "./img/racing.jpg",
+        "precio": 11800,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 20,
+        "nombre": "Real Madrid",
+        "liga": "La Liga",
+        "desc": "La camiseta del mejor club de europa con 15 champions levantadas",
+        "img": "./img/realmadrid.jpg",
+        "precio": 14300,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 21,
+        "nombre": "River",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta de uno de los mejores clubes de America, compitiendo en la libertadores",
+        "img": "./img/river.webp",
+        "precio": 13900,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 22,
+        "nombre": "San Lorenzo",
+        "liga": "Liga Profesional de Futbol",
+        "desc": "La camiseta de San Lorenzo que intenta ganar el torneo local",
+        "img": "./img/san-lorenzo.jpg",
+        "precio": 10200,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 23,
+        "nombre": "Shalcke",
+        "liga": "Bundesliga",
+        "desc": "La camiseta del Shalcke, un equipo que da sorpresas en la bundesliga",
+        "img": "./img/shalcke.webp",
+        "precio": 10100,
+        "cantidad": 1
+    }
+    ,
+    {
+        "id": 24,
+        "nombre": "Tottenham",
+        "liga": "Premier League",
+        "desc": "La camiseta de un equipo fuerte que siempre pelea contra los grandes equipos",
+        "img": "./img/tottenham.jpg",
+        "precio": 13200,
+        "cantidad": 1
+    }
+]
