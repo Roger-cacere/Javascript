@@ -40,7 +40,7 @@
         "nombre": "Bayern Leverkusen",
         "liga": "Bundesliga",
         "desc": "Camiseta del Bayern Leverkusen, un equipo que intenta luchar el campeonato cad año",
-        "img": "./img/bayern-leverkusen.avif",
+        "img": "./img/bayern-leverkusen.jpg",
         "precio": 8700,
         "cantidad": 1
     },
